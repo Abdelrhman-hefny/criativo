@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+
+    a {
+        color: #ffffff;
+    }
+
+    H1,
+    h2,
+    H3,
+    h4,
+    P,
+    SPAN {
+        COLOR: #fff;
+    }
+
+}
+
+html {
+    scroll-behavior: smooth!important;
+}
+
+//body
+body {
+    background: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+// global varibal
+$m-color: #5cd2b9;
+$nav-color: #151515;
+$th-color: #0d0e0e;
+$p-color: #979797;
+$m-font: 40px;
+$sec-font: 15px;
+$m-margin: 15px;
+
+h2 {
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+span {
+    color: $m-color;
+}
+
+hr {
+    width: 75px;
+    border-color: #5cd2b9;
+    margin: 15px 0;
+}
+
+p {
+    color: #979797;
+
+    line-height: 1.5;
+}
+
+p.p {
+    color: #5cd2b9;
+    font-size: 11px;
+    letter-spacing: 3px;
+
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+//BTN
+
+button {
+    width: fit-content;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+.button-58 {
+    align-items: center;
+    background-color: $m-color;
+    border: 0;
+    box-sizing: border-box;
+    padding: 0 17px;
+    color: #fff;
+    cursor: pointer;
+    height: 38px;
+    display: inline-flex;
+    min-width: 90px;
+    transition-duration: .4s;
+
+
+    &:focus {
+        color: #171e29;
+    }
+
+    &:hover {
+        background-color: #5cd2b986;
+        border-color: $m-color;
+        fill: $m-color;
+        transition-duration: .4s;
+        transform: scale(1.05); // تكبير حجم الصندوق عند تحويل الماوس (hover)
+
+    }
+}
+
+/* استهدف الأجهزة التي يكون عرض الشاشة أقل من 600 بكسل */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}
+
+/* استهدف الأجهزة التي يكون عرض الشاشة بين 601 بكسل و 900 بكسل */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 95%;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+}
+
+/* استهدف الأجهزة التي يكون عرض الشاشة أكبر من 900 بكسل */
+@media only screen and (min-width: 901px) {
+    .container {
+        width: 80%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
